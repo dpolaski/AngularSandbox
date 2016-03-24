@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en" ng-app="mainApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Angular Demo</title>
+  <script src="lib/angular/angular.min.js"></script>
+</head>
+<body>
+  <div ng-controller="CharController">
+    <ul>
+      <li ng-repeat="char in chars">
+	<h1>{{char.name}}</h1>
+	<img ng-src={{char.thumbnail.path+"."+char.thumbnail.extension}} width=200 alt={{char.name+" Thumbnail"}} />
+      </li>
+    </ul>
+  </div>
+  <script src="lib/md5.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/passwords.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/factories.js"></script>
+</body>
+</html>
