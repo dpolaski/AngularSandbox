@@ -1,0 +1,14 @@
+body {
+    background-color: lightblue;
+}
+
+.charinfo {
+    background-color: tan;
+    border-radius: 5px;
+    width: 200px;
+}
+
+ul
+{
+    list-style-type: none;
+}

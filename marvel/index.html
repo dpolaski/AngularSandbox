@@ -1,14 +1,15 @@
 <!doctype html>
 <html lang="en" ng-app="mainApp">
 <head>
+  <link rel="stylesheet" type="text/css" href="css/style.css"> 
   <meta charset="UTF-8">
-  <title>Angular Demo</title>
+  <title>Marvel Viewer</title>
   <script src="lib/angular/angular.min.js"></script>
 </head>
 <body>
   <div ng-controller="CharController">
     <ul>
-      <li ng-repeat="char in chars">
+      <li class="charinfo" ng-repeat="char in chars">
 	<h1>{{char.name}}</h1>
 	<img ng-src={{char.thumbnail.path+"."+char.thumbnail.extension}} width=200 alt={{char.name+" Thumbnail"}} />
       </li>
